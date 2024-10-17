@@ -1,9 +1,8 @@
-import Container from "@/components/Container";
-import Header from "@/components/Header";
+import Header from "@/components/header";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Head from "next/head";
 import "./globals.css";
+
 
 
 
@@ -30,9 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <Head>
+    <Header>
       <link rel="icon" href="/favicon.ico" />
-    </Head>
+    </Header>
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header />
         <Container>{children}</Container>
