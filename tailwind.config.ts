@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        chango: ['Chango', 'sans-serif'],
+        plexmono: ['IBM Plex Mono', 'monospace'],
+        sourcesans: ['Source Sans 3', 'sans-serif'],
+      },
     },
   },
   plugins: [],

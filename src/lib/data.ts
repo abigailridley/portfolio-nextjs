@@ -5,27 +5,19 @@ import weatherProjectImg from "@/public/weather-project.png";
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
+    name: "about",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "projects",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
+    name: "contact",
     hash: "#contact",
   },
 ] as const;
