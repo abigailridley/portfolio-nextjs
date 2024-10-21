@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body className={`font-plexmono antialiased text-gray-950 relative h-[50000px] pt-28 sm:pt-36`}>
+    <body className={`font-plexmono antialiased text-gray-950 relative pt-28 sm:pt-36`}>
         {/* <ThemeContextProvider>
           <ActiveSectionContextProvider> */}
         <div className="bg-[#f870467d] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
