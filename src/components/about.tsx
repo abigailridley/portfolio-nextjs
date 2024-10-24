@@ -13,7 +13,7 @@ export default class About {
           </div>
 
           <div className='font-sans p-4 max-h-60 overflow-y-scroll space-y-4 scrollbar-track-[#FCC6E7] scrollbar-thumb-[#0304FC] scrollbar-thin'>
-            <p className='font-chango text-center text-xl'>Hi, I'm Abigail<br/> aspiring full stack engineer</p>
+            <p className='font-chango text-center text-xl'>Hi, I&apos;m Abigail<br/> aspiring full stack engineer</p>
             <p className='font-bold font-plexmono'>2 years front-end web development experience, with <span className='font-plexmono underline'>Javascript, React & Next.js</span></p>
             <p className='font-bold font-plexmono'>4 month intensive Software Engineering course focused on <span className='underline font-plexmono'>Python</span></p>
             <p>At the end of 2021 I started dabbling in HTML, CSS & Vanilla Javascript which quickly turned into a hyperfixation that has been growing and developing ever since.</p>

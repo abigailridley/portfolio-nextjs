@@ -1,6 +1,7 @@
 "use client";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -12,7 +13,7 @@ export default function Header() {
         animate={{  x: "-50%" , y: 0, opacity: 1}}
       >
         <Link href="/">
-          <img
+          <Image
             src="/favicon.ico"
             alt="logo"
             className="h-[35px] w-[35px] fixed top-4 left-2 sm:top-2"
