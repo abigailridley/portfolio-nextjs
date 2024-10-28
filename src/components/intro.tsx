@@ -37,32 +37,36 @@ export default function Intro() {
       animate={{ opacity:1, y:0 }}
       >
       <div className='mb-5 mt-4 px-4 text-2xl leading-4 text-center sm:text-4xl'>
-      <h1 className='font-chango'>Hi, I&apos;m Abigail</h1> 
-      <h2 className='font-plexmono italic text-xl sm:text-3xl'>Software Developer</h2>
+      <h1 className='font-chango'>Hi, I&apos;m Abigail 
+      <p className='font-plexmono italic text-xl sm:text-3xl'>Software Developer</p>
+      </h1>
       </div>
 
       <div className='text-md sm:text-xl !leading-5 pb-10'>
-      <p>I build sites & apps.</p><p>My focus is {" "}<span className='font-bold'>React & Next.js</span> </p>
+      <p>I build sites & apps.</p><p>My focus is {" "}<span className='font-bold'>React & Next.js</span><p> with a side of <span className='font-bold'>Python.</span></p> </p>
       </div>
       </motion.div>
+
     <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
       initial={{ opacity: 0, y:100 }}
-      animate={{ opacity:1, y:0 }}
+      animate={{ opacity:1, y: 0 }}
       transition={{
         delay:0.1,
       }}
       >
-          <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>
+          <Link href="#contact" className='group bg-[#F87046] text-black px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-[#f47b56] active:scale-105 transition'>
           Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1.5 transition'/>
           </Link>
           <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border-black/10"
           href="/CV.pdf" download
         >Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition' /></a>
-          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg'>
+          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg focus:scale-110 hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border-black/10'
+          href="https://linkedin.com/in/ar-ridley" target="_blank">
             <BsLinkedin />
           </a>
-          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg text-[1.35rem]'>
+          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border-black/10'
+          href="https://github.com/abigailridley" target='_blank'>
             <FaGithubSquare />
           </a>
     </motion.div>
