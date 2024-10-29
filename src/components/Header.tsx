@@ -40,13 +40,13 @@ export default function Header() {
         
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center"
+              className="h-3/4 flex items-center justify-center "
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition focus:outline-none focus:ring focus:ring-offset-2 rounded-lg"
                 href={link.hash}
               >
                 {link.name}
