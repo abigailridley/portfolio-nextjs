@@ -17,24 +17,24 @@ export default function Header() {
       <nav className="flex fixed top-[0.15rem] left-1/2 h-4 -translate-x-1/2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
         <ul className="flex w-[20rem] flex-wrap items-center justify-center pb-5  text-[0.9rem] font-medium text-[#0303fc] sm:w-[initial] sm:flex-nowrap sm:gap-5">
          
-          <motion.li
-            className="flex items-center justify-center "
+        <motion.li
+            className="flex items-center justify-center"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
-            <Link aria-label="Home" href="/" passHref className="focus:outline-none">
-              <button
-                className="h-[35px] w-[35px]   focus:outline-none focus:ring focus:ring-offset-2 mr-5 mt-5 sm:m-0"
-              >
-                <Image 
-                  src="/favicon.ico"
-                  alt="logo"
-                  width="35"
-                  height="35"
-                  className="h-full w-full"
-                />
-              </button>
-            </Link>
+            <button
+              aria-label="Home"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="h-[40px] w-[40px] focus:outline-none focus:ring rounded-full focus:ring-offset-2 mr-5 mt-5 sm:m-0"
+            >
+              <Image 
+                src="/favicon.ico"
+                alt="logo"
+                width="35"
+                height="35"
+                className="h-full w-full m-2 sm:m-0"
+              />
+            </button>
           </motion.li>
 
         
