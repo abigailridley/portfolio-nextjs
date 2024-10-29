@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className=" mb-10 px-4 text-center text-gray-500">
+    <footer aria-label="Footer" className=" mb-10 px-4 text-center text-gray-500">
       <p className="font-sans text-xs">
 
         <span className="font-semibold">About this website:</span> built with

@@ -3,10 +3,10 @@
 export default function About() {
     return (
       <section>
-        <div className="relative border-[0.1rem] border-black rounded-md mt-10 sm:mt-0  bg-white max-h-xl sm:max-h-2xl max-w-sm sm:max-w-md shadow-md mb-28 sm:mb-40">
+        <div   className="relative border-[0.1rem] border-black rounded-md mt-10 sm:mt-0  bg-white max-h-xl sm:max-h-2xl max-w-sm sm:max-w-md shadow-md mb-28 sm:mb-40">
           <div className='border-b border-black p-1 flex bg-[#0304FC] text-white'>
-            <h2 className="ml-4" aria-label="About">about me </h2>
-            <button className="absolute top-0.5 right-2 text-black border border-black bg-[#FCC6E7] rounded-md w-6 h-4.5 flex items-left justify-center hover:bg-white hover:text-black transition duration-300 focus:outline-none focus:ring focus:ring-offset-2">
+            <h2 className="ml-4">about me </h2>
+            <button aria-label='Learn more' className="absolute top-0.5 right-2 text-black border border-black bg-[#FCC6E7] rounded-md w-6 h-4.5 flex items-left justify-center hover:bg-white hover:text-black transition duration-300 focus:outline-none focus:ring focus:ring-offset-2">
               ?
             </button>
           </div>

@@ -22,11 +22,11 @@ export default function Header() {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
-            <Link href="/" passHref className="focus:outline-none">
+            <Link aria-label="Home" href="/" passHref className="focus:outline-none">
               <button
-                className="h-[35px] w-[35px] rounded-full  focus:outline-none focus:ring focus:ring-offset-2 mr-5 mt-5 sm:m-0"
+                className="h-[35px] w-[35px]   focus:outline-none focus:ring focus:ring-offset-2 mr-5 mt-5 sm:m-0"
               >
-                <Image
+                <Image 
                   src="/favicon.ico"
                   alt="logo"
                   width="35"

@@ -63,11 +63,11 @@ export default function Intro() {
         >Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition' /></a>
           <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 focus:scale-110 hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border-black/10'
           href="https://linkedin.com/in/ar-ridley" target="_blank">
-            <BsLinkedin />
+            <BsLinkedin aria-label='linkedin' />
           </a>
           <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg text-[1.35rem] focus:outline-none focus:ring focus:ring-offset-2 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border-black/10'
-          href="https://github.com/abigailridley" target='_blank'>
-            <FaGithubSquare />
+          href="https://github.com/abigailridley" target='_blank' >
+            <FaGithubSquare aria-label='github' />
           </a>
     </motion.div>
 
