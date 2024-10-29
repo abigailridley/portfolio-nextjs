@@ -43,7 +43,7 @@ export default function Intro() {
       </div>
 
       <div className='text-md sm:text-xl !leading-5 pb-10'>
-      <p>I build sites & apps.</p><p>My focus is {" "}<span className='font-bold'>React & Next.js</span><p> with a side of <span className='font-bold'>Python.</span></p> </p>
+      <p>I build sites & apps.</p><p>My focus is {" "}<span className='font-bold'>React & Next.js</span> with a side of <span className='font-bold'>Python.</span> </p>
       </div>
       </motion.div>
 
