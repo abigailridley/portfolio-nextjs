@@ -2,6 +2,7 @@
 export default function Footer() {
   return (
     <footer className=" mb-10 px-4 text-center text-gray-950">
+     
       <p className="font-sans text-xs">
 
         <span className="font-semibold">About this website:</span> built with
