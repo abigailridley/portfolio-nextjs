@@ -8,7 +8,7 @@ import SectionWindow from "./section-window";
 
 export default function Projects() {
   return (
-    <section className="my-10">
+    <section id="projects" className="my-10 scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
       {projectsData.map((project, index) => (
         <motion.div
