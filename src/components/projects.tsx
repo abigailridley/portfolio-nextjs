@@ -1,14 +1,16 @@
 "use client";
 
 import { projectsData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionHeading from "./section-heading";
 import SectionWindow from "./section-window";
 
 export default function Projects() {
+  const { ref } = useSectionInView("projects", 0.3);
   return (
-    <section id="projects" className="my-10 scroll-mt-28">
+    <section ref={ref} id="projects" className="my-10 scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
       {projectsData.map((project, index) => (
         <motion.div

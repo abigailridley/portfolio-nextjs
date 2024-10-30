@@ -1,5 +1,7 @@
 "use client";
 
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,9 +9,12 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 
+
 export default function Intro() {
+  const { ref } = useSectionInView("home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
-    <section id="home"
+    <section ref={ref} id="home"
      className='scroll-mt-[100rem] text-center max-w-[50rem]'>
       <div className='flex flex-col items-center justify-center sm:flex-row'>
         <motion.div 
