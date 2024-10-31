@@ -17,7 +17,10 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType | nul
 export default function ActiveSectionContextProvider({ children }: ActiveSectionContextProviderProps) {
     const [activeSection, setActiveSection] = useState<SectionName>
     (null);
-    const [timeOfLastClick, setTimeOfLastClick] = useState(0)
+    const [timeOfLastClick, setTimeOfLastClick] = useState(0) // keep track of the time of the last click to disable observer temporarily to prevent bouncing when clicking nav links
+
+   
+
   return (
   <ActiveSectionContext.Provider 
   value={{
@@ -42,3 +45,4 @@ export function useActiveSectionContext() {
   
     return context;
   }
+
