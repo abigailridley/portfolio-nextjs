@@ -10,7 +10,7 @@ import SectionWindow from "./section-window";
 export default function Projects() {
   const { ref } = useSectionInView("projects", 0.3);
   return (
-    <section ref={ref} id="projects" className="my-10 scroll-mt-28">
+    <section ref={ref} id="projects" className="mt-10 scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
       {projectsData.map((project, index) => (
         <motion.div
