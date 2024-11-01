@@ -60,7 +60,13 @@ export default function Intro() {
         delay:0.1,
       }}
       >
-          <Link href="#contact" className='group bg-[#F87046] text-black px-7 py-3 flex items-center gap-2 rounded-lg  focus-visible:scale-110 hover:scale-110  focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 hover:bg-[#f47b56] active:scale-105 transition'>
+          <Link href="#contact" className='group bg-[#F87046] text-black px-7 py-3 flex items-center gap-2 rounded-lg  focus-visible:scale-110 hover:scale-110  focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 hover:bg-[#f47b56] active:scale-105 transition'
+          onClick={() => {
+            setActiveSection("contact");
+            setTimeOfLastClick(Date.now());
+            window.history.replaceState({},"", "/#contact");
+          }}
+          >
           Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1.5 transition'/>
           </Link>
           <a

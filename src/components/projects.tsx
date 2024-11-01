@@ -33,7 +33,7 @@ export default function Projects() {
                     width={280} 
                     height={180}
                     quality={95}
-                    className="relative rounded-lg border border-black transition-all duration-300 ease-out group-hover:scale-105"
+                    className="relative rounded-lg borderBlack transition-all duration-300 ease-out group-hover:scale-105"
                   />
                 </div>
                 <p className="mt-4 mx-2 text-center text-sm">{project.description}</p>
