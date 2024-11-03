@@ -46,18 +46,26 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}
       >
+        <label htmlFor="email">
+          Email
+        </label>
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="font-sans mb-5 h-14 px-4 rounded-lg borderBlack focus:outline-gray-500"
           name="senderEmail"
           type="email"
+          id="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="example@gmail.com"
         />
+        <label htmlFor="message">
+          Message
+        </label>
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="font-sans mb-5 rounded-lg borderBlack h-40 px-4 py-2 focus:outline-gray-500"
           name="message"
-          placeholder="Your message"
+          id="message"
+          placeholder="Type a message here..."
           required
           maxLength={5000}
         />
