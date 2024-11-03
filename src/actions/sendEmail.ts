@@ -23,25 +23,23 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  let data;
-  try {
-    data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "abigail.ridley@hotmail.co.uk",
-      subject: "Message from contact form",
-      replyTo: senderEmail,
-      react: React.createElement(ContactFormEmail, {
-        message: message,
-        senderEmail: senderEmail,
-      }),
-    });
-  } catch (error: unknown) {
-    return {
-      error: getErrorMessage(error),
-    };
-  }
-
+let data;
+try {
+  data = await resend.emails.send({
+    from: "Contact Form <onboarding@resend.com>",
+    to: "abigail.ridley@hotmail.co.uk",
+    subject: "Message from contact form",
+    react: React.createElement(ContactFormEmail, {
+      message: message,
+      senderEmail: senderEmail,
+    }),
+  });
+} catch (error: unknown) {
   return {
-    data,
+    error: getErrorMessage(error),
+    
   };
+
+}
+return { data };
 };
