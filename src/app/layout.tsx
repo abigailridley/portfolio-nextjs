@@ -4,10 +4,9 @@ import type { Metadata } from "next";
 
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import "./globals.css";
-// import ActiveSectionContextProvider from "@/context/active-section-context";
 // import ThemeSwitch from "@/components/theme-switch";
 // import ThemeContexrProvider from "@/context/theme-context";
-// import { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 
 export const metadata: Metadata = {
@@ -34,9 +33,9 @@ export default function RootLayout({
           </ActiveSectionContextProvider>
        
 
-          {/* <Toaster position="top-right" />
-          <ThemeSwitch/>
-          </ActiveSectionContextProvider>
+          <Toaster position="top-right" />
+          {/* <ThemeSwitch/> */}
+          {/* </ActiveSectionContextProvider>
         </ThemeContextProvider> */}
        
       </body>
