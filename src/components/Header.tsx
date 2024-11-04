@@ -6,8 +6,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Header() {
+type HeaderProps = {
+  logoSrc: string;
+};
+
+export default function Header({ logoSrc }: HeaderProps) {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  
 
   return (
     <header className="z-[999] relative">
@@ -36,7 +41,7 @@ export default function Header() {
               className="h-[40px] w-[40px] focus-visible:outline-none focus-visible:ring rounded-full focus-visible:ring-offset-2 mr-5 mt-5 sm:m-0"
             >
               <Image
-                src="/favicon.ico"
+                src={logoSrc}
                 alt="logo"
                 width="35"
                 height="35"
