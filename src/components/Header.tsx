@@ -59,7 +59,7 @@ export default function Header({ logoSrc }: HeaderProps) {
             >
               <Link
   className={clsx(
-    "flex w-full items-center justify-center px-3 py-3 hover:text-[#0000b1] transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-gray-500 dark:hover:gray-300 ",
+    "flex w-full items-center justify-center px-3 py-3 hover:text-[#0000b1] transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-gray-500 dark:hover:text-gray-200",
     activeSection === link.name && "text-[#0000b1] dark:text-gray-200"
   )}
   href={link.hash}
