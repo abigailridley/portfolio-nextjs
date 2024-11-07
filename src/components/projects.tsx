@@ -25,7 +25,7 @@ export default function Projects() {
           >
             <SectionWindow title={project.title} className="relative group w-full h-full">
               <div className="flex flex-col items-center w-full h-full">
-                <div className="relative w-[280px] h-[180px] my-3"> {/* Inner image fixed dimensions */}
+                <div className="relative w-[280px] h-[180px] my-3"> 
                   <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#f870467d] to-[#9bbcffc6] opacity-0 blur-lg transition-all duration-300 ease-out group-hover:opacity-50 group-hover:scale-110"></div>
                   <Image
                     src={project.imageUrl}
@@ -39,13 +39,13 @@ export default function Projects() {
                 <p className="mt-4 mx-2 text-center text-sm">{project.description}</p>
                 <div className="flex my-4 space-x-2">
                   <a
-                    className="bg-[#FCC6E7] hover:bg-[#f9afdd] shadow-md border-[0.1rem] border-black px-5 py-3 flex items-center gap-2 rounded-md outline-none focus:outline-none focus:ring focus:ring-offset-2 transition cursor-pointer"
+                    className="bg-pink hover:bg-[#f9afdd] shadow-md border-[0.1rem] border-black px-5 py-3 flex items-center gap-2 rounded-md outline-none focus:outline-none focus:ring focus:ring-offset-2 transition cursor-pointer"
                     href="/"
                   >
                     View on Github
                   </a>
                   <a
-                    className="bg-[#F87046] hover:bg-[#f38665] shadow-md border-[0.1rem] border-black px-5 py-3 flex items-center gap-2 rounded-md outline-none focus:outline-none focus:ring focus:ring-offset-2 transition cursor-pointer"
+                    className="bg-orange hover:bg-[#f38665] shadow-md border-[0.1rem] border-black px-5 py-3 flex items-center gap-2 rounded-md outline-none focus:outline-none focus:ring focus:ring-offset-2 transition cursor-pointer"
                     href="/"
                   >
                     View Live Site
