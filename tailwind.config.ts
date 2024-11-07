@@ -11,6 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'primary-blue': '#0304fcff',
+        'pink': '#fcc6e7ff',
+        'orange': '#f87046ff',
+        'light-blue': '#9bbdffff',
+        'blush': '#fbeaebff',
       },
       fontFamily: {
         chango: ['Chango', 'sans-serif'],
