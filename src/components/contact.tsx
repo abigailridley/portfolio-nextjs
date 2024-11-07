@@ -30,7 +30,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact</SectionHeading>
 
-      <div className='text-gray-700 font-sans mt-5'>
+      <div className='text-gray-700 font-sans mt-5 dark:text-gray-50'>
 <p >Please contact me directly at <a className='underline focus:outline-none focus-visible:ring rounded-lg' href='mailto:abigail-ridley@outlook.com'>abigail-ridley@outlook.com</a></p>
 <p>or use the form below:</p></div>
 
@@ -50,7 +50,8 @@ export default function Contact() {
           Email
         </label>
         <input
-          className="font-sans mb-5 h-14 px-4 rounded-lg borderBlack focus:outline-gray-500"
+          className="font-sans mb-5 h-14 px-4 rounded-lg borderBlack focus:outline-gray-500
+          dark:focus:outline-primary-blue"
           name="senderEmail"
           type="email"
           id="email"
@@ -62,7 +63,7 @@ export default function Contact() {
           Message
         </label>
         <textarea
-          className="font-sans mb-5 rounded-lg borderBlack h-40 px-4 py-2 focus:outline-gray-500"
+          className="font-sans mb-5 rounded-lg borderBlack h-40 px-4 py-2 focus:outline-gray-500 dark:focus:outline-primary-blue"
           name="message"
           id="message"
           placeholder="Type a message here..."
