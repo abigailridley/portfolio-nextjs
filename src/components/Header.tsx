@@ -59,8 +59,8 @@ export default function Header({ logoSrc }: HeaderProps) {
             >
               <Link
   className={clsx(
-    "flex w-full items-center justify-center px-3 py-3 hover:text-[#0000b1] transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-gray-500 dark:hover:text-gray-200",
-    activeSection === link.name && "text-primary-blue dark:text-gray-200"
+    "flex w-full items-center justify-center px-3 py-3 hover:text-[#0000b1] transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-gray-300 dark:hover:text-gray-100",
+    activeSection === link.name && "text-primary-blue dark:text-black"
   )}
   href={link.hash}
   onClick={() => {
@@ -71,7 +71,7 @@ export default function Header({ logoSrc }: HeaderProps) {
   {link.name}
   {link.name === activeSection && (
     <motion.span
-      className="bg-[#fbc6e582] rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+      className="bg-[#fbc6e582] rounded-full absolute inset-0 -z-10 dark:bg-gray-400"
       layoutId="activeSection"
       transition={{
         type: "spring",

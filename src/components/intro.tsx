@@ -60,7 +60,7 @@ export default function Intro() {
         delay:0.1,
       }}
       >
-          <Link href="#contact" className='group bg-orange text-black px-7 py-3 flex items-center gap-2 rounded-lg  focus-visible:scale-110 hover:scale-110  focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 hover:bg-[#f47b56] active:scale-105 transition'
+          <Link href="#contact" className='group bg-orange text-black px-7 py-3 flex items-center gap-2 rounded-lg  focus-visible:scale-110 hover:scale-110  focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 hover:bg-[#f47b56] active:scale-105 transition dark:bg-primary-blue/60 dark:text-white/90 dark:hover:bg-primary-blue/80'
           onClick={() => {
             setActiveSection("contact");
             setTimeOfLastClick(Date.now());
@@ -77,11 +77,11 @@ export default function Intro() {
           <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
           </a>
 
-          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:scale-110 hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border-black/10 dark:bg-white/10 dark:text-white/60'
+          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:scale-110 hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border-black/10 dark:bg-white/10 dark:text-white/80'
           href="https://linkedin.com/in/ar-ridley" target="_blank">
             <BsLinkedin aria-label='linkedin' />
           </a>
-          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg text-[1.35rem] focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border-black/10 dark:bg-white/10 dark:text-white/60'
+          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-lg text-[1.35rem] focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border-black/10 dark:bg-white/10 dark:text-white/90'
           href="https://github.com/abigailridley" target='_blank' >
             <FaGithubSquare aria-label='github' />
           </a>
