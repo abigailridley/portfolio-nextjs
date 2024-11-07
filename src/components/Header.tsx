@@ -17,7 +17,7 @@ export default function Header({ logoSrc }: HeaderProps) {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed top-0 left-1/2 h-[6rem] w-full border border-blush border-opacity-40 bg-blush bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-xl dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 h-[6rem] w-full border border-blush/75 border-opacity-40 bg-blush/75  shadow-lg shadow-black/[0.03] backdrop-blur-xl sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-xl dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ x: "-50%", y: -100, opacity: 0 }}
         animate={{ x: "-50%", y: 0, opacity: 1 }}
       ></motion.div>
