@@ -1,18 +1,19 @@
 "use client";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTheme } from "@/context/theme-context";
 import { links } from "@/lib/data";
 import clsx from 'clsx';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-type HeaderProps = {
-  logoSrc: string;
-};
 
-export default function Header({ logoSrc }: HeaderProps) {
+
+export default function Header() {
+  const { theme } = useTheme();
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  
+
+  const logoSrc = theme === "dark" ? "/favicon-dark.ico" : "/favicon.ico";
 
   return (
     <header className="z-[999] relative">
