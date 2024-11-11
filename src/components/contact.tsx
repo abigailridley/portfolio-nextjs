@@ -51,7 +51,7 @@ export default function Contact() {
         </label>
         <input
           className="font-sans mb-5 h-14 px-4 rounded-lg borderBlack focus:outline-gray-500
-          dark:focus:outline-primary-blue"
+          dark:focus:outline-primary-blue "
           name="senderEmail"
           type="email"
           id="email"
