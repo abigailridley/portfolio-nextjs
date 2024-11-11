@@ -2,16 +2,15 @@
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useTheme } from "@/context/theme-context";
 import { links } from "@/lib/data";
-import clsx from 'clsx';
+import clsx from "clsx";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-
-
 export default function Header() {
   const { theme } = useTheme();
-  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   const logoSrc = theme === "dark" ? "/favicon-dark.ico" : "/favicon.ico";
 
@@ -36,8 +35,8 @@ export default function Header() {
                 e.preventDefault();
                 setTimeOfLastClick(Date.now());
                 window.scrollTo({ top: 0, behavior: "smooth" });
-                setActiveSection(null); 
-                window.history.replaceState(null, "", "/"); 
+                setActiveSection(null);
+                window.history.replaceState(null, "", "/");
               }}
               className="h-[40px] w-[40px] focus-visible:outline-none focus-visible:ring rounded-full focus-visible:ring-offset-2 mr-5 mt-5 sm:m-0"
             >
@@ -59,29 +58,30 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-  className={clsx(
-    "flex w-full items-center justify-center px-3 py-3 hover:text-[#0000b1] transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-gray-300 dark:hover:text-gray-100",
-    activeSection === link.name && "text-primary-blue dark:text-black"
-  )}
-  href={link.hash}
-  onClick={() => {
-    setActiveSection(link.name);
-    setTimeOfLastClick(Date.now());
-  }}
->
-  {link.name}
-  {link.name === activeSection && (
-    <motion.span
-      className="bg-[#fbc6e582] rounded-full absolute inset-0 -z-10 dark:bg-gray-400"
-      layoutId="activeSection"
-      transition={{
-        type: "spring",
-        stiffness: 380,
-        damping: 30,
-      }}
-    ></motion.span>
-  )}
-</Link>
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-[#0000b1] transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-gray-300 dark:hover:text-gray-100",
+                  activeSection === link.name &&
+                    "text-primary-blue dark:text-black"
+                )}
+                href={link.hash}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
+              >
+                {link.name}
+                {link.name === activeSection && (
+                  <motion.span
+                    className="bg-[#fbc6e582] rounded-full absolute inset-0 -z-10 dark:bg-gray-400"
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  ></motion.span>
+                )}
+              </Link>
             </motion.li>
           ))}
         </ul>
