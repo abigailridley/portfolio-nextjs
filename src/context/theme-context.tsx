@@ -17,33 +17,26 @@ const ThemeContext = createContext<ThemeContextType | null>(null)
 
 export default function ThemeContextProvider({
     children,
-}: ThemeContextProviderProps) {
+    onThemeChange,
+}: ThemeContextProviderProps & { onThemeChange?: (theme: Theme) => void }) {
     const [theme, setTheme] = useState<Theme>('light');
 
     const toggleTheme = () => {
-        if (theme === 'light') {
-            setTheme('dark');
-            window.localStorage.setItem('theme', 'dark');
-            document.documentElement.classList.add('dark');
-        } else {
-            setTheme('light');
-            window.localStorage.setItem('theme', 'light');
-            document.documentElement.classList.remove('dark');
-        }
-    };
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+        onThemeChange?.(newTheme);
+        window.localStorage.setItem('theme', newTheme);
+        document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    }
+       
     useEffect(() => {
         const localTheme = window.localStorage.getItem('theme') as Theme | null;
-        if (localTheme) {
-            setTheme(localTheme);
-            if (localTheme === 'dark') {
-                document.documentElement.classList.add('dark');
-            }
-            
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('dark');
-            document.documentElement.classList.add('dark');
-        }
-    } ,[])
+        const initialTheme = localTheme ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        setTheme(initialTheme);
+        document.documentElement.classList.toggle('dark', initialTheme === 'dark');
+        onThemeChange?.(initialTheme);
+    }
+    ,[]);
   
   
     return (
