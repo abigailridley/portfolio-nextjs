@@ -31,7 +31,7 @@ export default function Contact() {
       <SectionHeading>Contact</SectionHeading>
 
       <div className='text-gray-700 font-sans mt-5 dark:text-gray-50'>
-<p >Please contact me directly at <a className='underline focus:outline-none focus-visible:ring rounded-lg' href='mailto:abigail-ridley@outlook.com'>abigail-ridley@outlook.com</a></p>
+<p >Please contact me directly at <span className="block sm:inline"><a className='underline focus:outline-none focus-visible:ring rounded-lg' href='mailto:abigail-ridley@outlook.com'>abigail-ridley@outlook.com</a> </span></p>
 <p>or use the form below:</p></div>
 
 <form
