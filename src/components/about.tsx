@@ -18,6 +18,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
     >
       <SectionHeading>About</SectionHeading>
+
       <SectionWindow title="Summary" className="relative">
         <div className="font-sans p-4 space-y-4 leading-7 text-justify">
           <p>

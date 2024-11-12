@@ -59,7 +59,7 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center p-1 m-1 sm:m-0 sm:p-3  hover:text-primary-blue transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-blush sm:dark:text-gray-300 sm:dark:hover:text-gray-50",
+                  "flex w-full items-center justify-center p-1 m-1 sm:m-0 sm:p-3  hover:text-primary-blue transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-blush  sm:dark:hover:text-gray-50",
                   activeSection === link.name
                     ? "text-primary-blue border-2 rounded-lg p-1 border-primary-blue dark:border-blush sm:border-none  sm:dark:text-gray-900 dark:text-blush "
                     : "hover:text-primary-blue sm:dark:hover:text-gray-50 "
