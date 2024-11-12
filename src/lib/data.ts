@@ -33,7 +33,7 @@ export const projectsData = [
     imageUrl: "/weather-project.png", 
   },
   {
-    title: "Story App - Team Project",
+    title: "Story App (Team Project)",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
