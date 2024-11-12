@@ -14,7 +14,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-0 w-[min(100%,38rem)] text-center"
+      className="mb-20 sm:mb-0 w-[min(100%,38rem)] text-center scroll-mt-8 sm:scroll-mt-28"
       initial={{
         opacity: 0,
       }}
@@ -30,11 +30,22 @@ export default function Contact() {
     >
       <SectionHeading>Contact</SectionHeading>
 
-      <div className='text-gray-700 font-sans mt-5 dark:text-gray-50'>
-<p >Please contact me directly at <span className="block sm:inline"><a className='underline focus:outline-none focus-visible:ring rounded-lg' href='mailto:abigail-ridley@outlook.com'>abigail-ridley@outlook.com</a> </span></p>
-<p>or use the form below:</p></div>
+      <div className="text-gray-700 font-sans mt-5 dark:text-gray-50">
+        <p>
+          Please contact me directly at{" "}
+          <span className="block sm:inline">
+            <a
+              className="underline focus:outline-none focus-visible:ring rounded-lg"
+              href="mailto:abigail-ridley@outlook.com"
+            >
+              abigail-ridley@outlook.com
+            </a>{" "}
+          </span>
+        </p>
+        <p>or use the form below:</p>
+      </div>
 
-<form
+      <form
         className="mt-10 flex flex-col text-start"
         action={async (formData) => {
           const { error } = await sendEmail(formData);
@@ -46,9 +57,7 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}
       >
-        <label htmlFor="email">
-          Email
-        </label>
+        <label htmlFor="email">Email</label>
         <input
           className="font-sans mb-5 h-14 px-4 rounded-lg borderBlack focus:outline-gray-500
           dark:focus:outline-primary-blue "
@@ -59,9 +68,7 @@ export default function Contact() {
           maxLength={500}
           placeholder="example@gmail.com"
         />
-        <label htmlFor="message">
-          Message
-        </label>
+        <label htmlFor="message">Message</label>
         <textarea
           className="font-sans mb-5 rounded-lg borderBlack h-40 px-4 py-2 focus:outline-gray-500 dark:focus:outline-primary-blue"
           name="message"

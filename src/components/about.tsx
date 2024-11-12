@@ -12,7 +12,7 @@ export default function About() {
     <motion.section
       id="about"
       ref={ref}
-      className="scroll-mt-28"
+      className="scroll-mt-8 sm:scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

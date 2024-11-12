@@ -45,23 +45,24 @@ export default function Header() {
                 alt="logo"
                 width="35"
                 height="35"
-                className="h-full w-full m-2 sm:m-0"
+                className="h-full w-full mx-3 my-2 sm:m-0 "
               />
             </Link>
           </motion.li>
 
           {links.map((link) => (
             <motion.li
-              className="relative h-3/4 flex items-center justify-center ml-3 sm:m-0"
+              className="relative h-3/4 flex items-center justify-center ml-4 sm:m-0"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-[#0000b1] transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-gray-300 dark:hover:text-gray-100",
-                  activeSection === link.name &&
-                    "text-primary-blue dark:text-black"
+                  "flex w-full items-center justify-center p-1 m-1 sm:m-0 sm:p-3  hover:text-primary-blue transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2 rounded-lg dark:text-blush sm:dark:text-gray-300 sm:dark:hover:text-gray-50",
+                  activeSection === link.name
+                    ? "text-primary-blue border-2 rounded-lg p-1 border-primary-blue dark:border-blush sm:border-none  sm:dark:text-gray-900 dark:text-blush "
+                    : "hover:text-primary-blue sm:dark:hover:text-gray-50 "
                 )}
                 href={link.hash}
                 onClick={() => {
