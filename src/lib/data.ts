@@ -29,21 +29,22 @@ export const projectsData = [
     title: "Weather App",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["HTML", "CSS", "Javascript", "OpenWeather API"],
     imageUrl: "/weather-project.png", 
+   
   },
   {
     title: "Personalised Stories",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["Python", "Flask", "MySQL", "Javascript"],
     imageUrl: "/team-project.png", 
   },
   {
     title: "Travel Blog Project",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "Google Maps API", "Mailchimp"],
     imageUrl: "/travel-project.png", 
   },
 ] as const;
