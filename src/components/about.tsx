@@ -19,7 +19,12 @@ export default function About() {
     >
       <SectionHeading>About</SectionHeading>
 
-      <SectionWindow title="Summary" className="relative">
+      <SectionWindow
+        title="Summary"
+        className="relative"
+        modalTitle="Bonus Info"
+        modalType="about"
+      >
         <div className="font-sans p-4 space-y-4 leading-7 text-justify">
           <p>
             To be a <span className="font-bold">full-stack developer</span> is
