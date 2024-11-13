@@ -30,7 +30,7 @@ const LearnMoreBtn: React.FC<LearnMoreBtnProps> = ({
       >
         <span>?</span>
       </button>
-      <span className="absolute mb-2 bottom-full right-3 transform translate-x-1/2 p-1 text-xs text-white bg-black dark:text-gray-900 dark:bg-gray-100 rounded-md opacity-0 duration-300 group-hover:opacity-100 cursor-default">
+      <span className="absolute mb-2 bottom-full right-3 transform translate-x-1/2 p-1 text-xs text-white bg-black dark:text-gray-900 dark:bg-gray-100 rounded-md opacity-0 duration-300 sm:group-hover:opacity-100 cursor-default">
         Learn more
       </span>
       {isModalOpen && (
