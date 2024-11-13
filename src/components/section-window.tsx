@@ -5,12 +5,16 @@ interface SectionWindowProps {
   title: string;
   children: React.ReactNode;
   className?: string;
+  tags: string[];
+  modalTitle?: string;
 }
 
 const SectionWindow: React.FC<SectionWindowProps> = ({
   title,
   children,
   className,
+  tags,
+  modalTitle,
 }) => {
   return (
     <section>
@@ -20,7 +24,7 @@ const SectionWindow: React.FC<SectionWindowProps> = ({
         <div className="border-b border-black p-1 flex bg-primary-blue text-white rounded-t-md dark:bg-slate-800">
           <div className="text-md sm:text-md font-bold ml-4">{title}</div>
 
-          <LearnMoreBtn />
+          <LearnMoreBtn tags={tags} modalTitle={modalTitle} />
         </div>
         <div>{children}</div>
       </div>
