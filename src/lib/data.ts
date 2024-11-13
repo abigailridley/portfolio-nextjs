@@ -72,3 +72,12 @@ export const skillsData = [
   "Figma",
   
 ] as const;
+
+export const aboutData = [
+  "just moved to Edinburgh from Brighton",
+  "fluent in Spanish ish",
+  "travelled the americas for 6 months this year",
+  "recently shaved my hair off for charity",
+  "hate christmas, love cats",
+
+]

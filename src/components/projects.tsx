@@ -32,6 +32,7 @@ export default function Projects() {
               className="relative w-full h-full "
               tags={[...project.tags]}
               modalTitle="Skills Used"
+              modalType="project"
             >
               <div className="flex flex-col items-center w-full h-full">
                 <div className="group relative hidden sm:block w-[280px] h-[180px] my-3">
