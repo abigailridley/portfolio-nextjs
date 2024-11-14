@@ -25,27 +25,44 @@ export const links = [
 
 
 export const projectsData = [
-  {
-    title: "Weather App",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["HTML", "CSS", "Javascript", "OpenWeather API"],
-    imageUrl: "/weather-project.png", 
-   
-  },
+
   {
     title: "Personalised Stories",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting.",
-    tags: ["Python", "Flask", "MySQL", "Javascript"],
+      "The final team project in my Software course. App that generates personalised bed-time stories based on user input. Using Flask endpoints and mySQL database.",
+    tags: ["Python", "Flask", "MySQL","HTML", "CSS", "Javascript", "Figma", "Scrum", "Unit Testing"],
     imageUrl: "/team-project.png", 
+    liveSite: "",
+    gitHubLink:"https://github.com/JessamineCodes/Team3_StorytimeApp"
   },
+  
   {
     title: "Travel Blog Project",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Google Maps API", "Mailchimp"],
-    imageUrl: "/travel-project.png", 
+      "A blog documenting my travel across the Americas. Using Google Maps API to show my journey and current location, with Mailchimp API for email subscription.",
+    tags: ["React", "Google Maps API", "Mailchimp API", "CSS", "Responsive", "Bootstrap", "Dynamic Routing","Netlify"],
+    imageUrl: "/travel-blog-project.png", 
+    liveSite: "https://ridley.netlify.app/",
+    gitHubLink:"https://github.com/abigailridley/travel-blog-project"
+  },
+ 
+  {
+    title: "Weather App",
+    description:
+      "Weather App that shows the current weather and forecast for the next 5 days. Using the OpenWeather API and geolocation with timezone-accurate sunrise & sunset times.",
+    tags: ["HTML", "CSS", "Javascript", "OpenWeather API", "Geolocation", "Timezone API", "Axios", "Netlify"],
+    imageUrl: "/weather-project.png", 
+    liveSite: "https://weather-app-5day-vanilla-javascript.netlify.app",
+    gitHubLink:"https://github.com/abigailridley/Weather-App"
+  },
+  {
+    title: "Chat App",
+    description:
+    "A retro style dummy chat app created as a birthday gift with deep fake celebrity audio messages.",
+    tags: ["React","React Audio Player", "ElevenLabs", "CSS", "Netlify"],
+    imageUrl:"/chat-app.png",
+    liveSite: "https://instant-messenger.netlify.app/",
+    gitHubLink:"https://github.com/abigailridley/y2k-chat"
   },
 ] as const;
 
@@ -57,19 +74,23 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
-"Framer Motion",
   "Tailwind",
+  "Framer Motion",
   "GitHub",
   "RESTful APIs",
   "Python",
   "OOP",
   "Flask",
-  "SQL",
+  "MySQL",
   "AWS",
   "DevOps",
   "Scrum",
   "Mailchimp",
   "Figma",
+  "Bootstrap",
+  "Netlify",
+  "Vercel",
+
   
 ] as const;
 
