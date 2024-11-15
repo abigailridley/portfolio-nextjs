@@ -37,13 +37,21 @@ export default function Projects() {
               <div className="flex flex-col items-center w-full h-full">
                 <div className="group relative hidden sm:block w-[280px] h-[180px] my-3">
                   <div className="absolute hidden sm:block inset-0 rounded-lg bg-gradient-to-r from-[#f870467d] to-[#9bbcffc6] opacity-0 blur-lg transition-all duration-300 ease-out group-hover:opacity-50 group-hover:scale-110 dark:from-[#7f3a25e9] dark:to-[#4474d5cd]"></div>
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.title}
-                    layout="fill"
-                    quality={95}
-                    className="relative project-image hidden sm:block rounded-lg borderBlack transition-all duration-300 ease-out group-hover:scale-105"
-                  />
+                  <a
+                    href={project.liveSite}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={project.imageSrc}
+                      alt={project.imageAlt}
+                      fill
+                      objectFit="cover"
+                      objectPosition="center"
+                      quality={95}
+                      className="relative hidden sm:block rounded-lg borderBlack transition-all duration-300 ease-out group-hover:scale-105"
+                    />
+                  </a>
                 </div>
                 <p className="mt-4 mx-7 mb-2 sm:mt-5 sm:mx-5 text-sm text-justify">
                   {project.description}
@@ -63,7 +71,9 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Live Site
+                    {project.title === "Personalised Stories"
+                      ? "View Presentation"
+                      : "View Live Site"}
                   </a>
                 </div>
               </div>

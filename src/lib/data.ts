@@ -1,5 +1,3 @@
-
-
 export const links = [
   { 
     name: "home",
@@ -31,8 +29,10 @@ export const projectsData = [
     description:
       "The final team project in my Software course. App that generates personalised bed-time stories based on user input. Using Flask endpoints and mySQL database.",
     tags: ["Python", "Flask", "MySQL","HTML", "CSS", "Javascript", "Figma", "Scrum", "Unit Testing"],
-    imageUrl: "/team-project.png", 
-    liveSite: "",
+    
+    imageSrc: "/team-project.png", 
+    imageAlt: "Personalised Stories Project",
+    liveSite: "https://www.canva.com/design/DAF3cv-hsuA/1YprhPujlImuM4MN26SwdA/view?utm_content=DAF3cv-hsuA&utm_campaign=designshare&utm_medium=link&utm_source=editor", // View Presentation
     gitHubLink:"https://github.com/JessamineCodes/Team3_StorytimeApp"
   },
   
@@ -41,7 +41,9 @@ export const projectsData = [
     description:
       "A blog documenting my travel across the Americas. Using Google Maps API to show my journey and current location, with Mailchimp API for email subscription.",
     tags: ["React", "Google Maps API", "Mailchimp API", "CSS", "Responsive", "Bootstrap", "Dynamic Routing","Netlify"],
-    imageUrl: "/travel-blog-project.png", 
+    
+    imageSrc: "/travel-blog-project.png", 
+    imageAlt: "Travel Blog Project",
     liveSite: "https://ridley.netlify.app/",
     gitHubLink:"https://github.com/abigailridley/travel-blog-project"
   },
@@ -51,7 +53,9 @@ export const projectsData = [
     description:
       "Weather App that shows the current weather and forecast for the next 5 days. Using the OpenWeather API and geolocation with timezone-accurate sunrise & sunset times.",
     tags: ["HTML", "CSS", "Javascript", "OpenWeather API", "Geolocation", "Timezone API", "Axios", "Netlify"],
-    imageUrl: "/weather-project.png", 
+    
+    imageSrc: "/weather-project.png", 
+    imageAlt: "Weather App Project",
     liveSite: "https://weather-app-5day-vanilla-javascript.netlify.app",
     gitHubLink:"https://github.com/abigailridley/Weather-App"
   },
@@ -60,7 +64,9 @@ export const projectsData = [
     description:
     "A retro style dummy chat app created as a birthday gift with deep fake celebrity audio messages.",
     tags: ["React","React Audio Player", "ElevenLabs", "CSS", "Netlify"],
-    imageUrl:"/chat-app.png",
+    
+    imageSrc:"/chat-app.png",
+    imageAlt: "Chat App Project",
     liveSite: "https://instant-messenger.netlify.app/",
     gitHubLink:"https://github.com/abigailridley/y2k-chat"
   },
