@@ -28,7 +28,9 @@ const Modal: React.FC<ModalProps> = ({
         >
           x
         </button>
-        <h2 className="mb-3 font-bold text-lg">{modalTitle}</h2>
+        <h2 className="mb-3 font-bold text-lg dark:text-gray-50">
+          {modalTitle}
+        </h2>
         <ul className="flex flex-wrap justify-center gap-2">
           {type === "project" &&
             content.tags?.map((tag, index) => (
