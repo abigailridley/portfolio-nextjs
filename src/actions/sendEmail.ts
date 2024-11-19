@@ -3,7 +3,7 @@
 import ContactFormEmail from "@/email/contact-form-email";
 import { getErrorMessage, validateString } from "@/lib/utils";
 import React from "react";
-import { Resend } from "resend";
+import { CreateEmailResponse, Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -23,7 +23,7 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-let data;
+let data:CreateEmailResponse;
 try {
   data = await resend.emails.send({
     from: "Contact Form <onboarding@resend.dev>",
@@ -34,6 +34,8 @@ try {
       senderEmail: senderEmail,
     }),
   });
+   console.log({data})
+   if (data.error) throw new Error (data.error.message)
 } catch (error: unknown) {
   return {
     error: getErrorMessage(error),
