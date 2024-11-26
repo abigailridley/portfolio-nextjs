@@ -1,4 +1,6 @@
-# Personal Tech Portfolio
+# Personal Tech Portfolio 👩🏻‍💻
+
+Website created by me, hosted on Vercel with custom domain, showcasing my projects in programming. 
 
 ### Technologies used 
 - Built with React & Next.js (App Router & Server Actions)
