@@ -19,7 +19,7 @@ Website hosted on Vercel with custom domain, showcasing my projects and a bit ab
 - Completely fell in love with ••Tailwind•• CSS
   - Cannot see myself going back to file based CSS without a fight. Loved the mobile first ease of responsiveness, enjoyed the flow of work much better.
 - My first time working with client side and server side components
-  -- Took a while to get used to but any way to modernise and increase efficiency is something I want to implement
+  - Took a while to get used to but any way to modernise and increase efficiency is something I want to implement
 - Very interesting in ••Nextjs•• capabilities
-  -- Have ideas for new projects that use Nextjs baked in data handling and backend functionalities
+  - Have ideas for new projects that use Nextjs baked in data handling and backend functionalities
 - As always with a ••custom domain••, I had a lot of fuss and debugging to do but always worth it when my project is live on www.abigailridley.com !
