@@ -1,4 +1,4 @@
-## Personal Tech Portfolio
+# Personal Tech Portfolio
 
 - Built with React & Next.js (App Router & Server Actions)
 - TypeScript
@@ -9,7 +9,7 @@
 - Custom Domain
 
 
-# What I learned from this project
+## What I learned from this project
 - The intracacies of Typescript and type handling.
   -- I'm aware of the criticisms that Typescript can be overly fussy, but as a junior developer I enjoyed the challenge of the specificity of each variable and props
 - Completely fell in love with Tailwind CSS
