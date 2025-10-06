@@ -25,15 +25,15 @@ export const links = [
 export const projectsData = [
 
   {
-    title: "Personalised Stories",
+    title: "Wedding Website",
     description:
-      "The final team project in my Software course. App that generates personalised bed-time stories based on user input. Using Flask endpoints and mySQL database.",
-    tags: ["Python", "Flask", "MySQL","HTML", "CSS", "Javascript", "Figma", "Scrum", "Unit Testing"],
+      "Built as a freelance web development project, this responsive wedding website features a dynamic RSVP system, allowing guests to submit and update responses via unique links. Developed with Next.js, TypeScript, Tailwind CSS, and Supabase, with integrated email notifications and Google Maps.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Vercel", "Resend", "Google Maps API", "Dynamic Routing", "Form Validation", "Responsive Design", "UI/UX", "Email Automation", "Figma", "Canva"],
     
-    imageSrc: "/team-project.png", 
-    imageAlt: "Personalised Stories Project",
-    liveSite: "https://www.canva.com/design/DAF3cv-hsuA/1YprhPujlImuM4MN26SwdA/view?utm_content=DAF3cv-hsuA&utm_campaign=designshare&utm_medium=link&utm_source=editor", // View Presentation
-    gitHubLink:"https://github.com/JessamineCodes/Team3_StorytimeApp"
+    imageSrc: "/vanrileywedding.png", 
+    imageAlt: "Wedding Website Project",
+    liveSite: "https://www.vanrileywedding.co.uk/", 
+    gitHubLink:"https://github.com/abigailridley/vanriley-wedding-site"
   },
   
   {
@@ -60,15 +60,15 @@ export const projectsData = [
     gitHubLink:"https://github.com/abigailridley/Weather-App"
   },
   {
-    title: "Chat App",
+    title: "Freelance Shopify Art Shop",
     description:
-    "A retro style dummy chat app created as a birthday gift with deep fake celebrity audio messages.",
-    tags: ["React","React Audio Player", "ElevenLabs", "CSS", "Netlify"],
+    "Built as a freelance web development project, this Shopify store showcases an independent artist’s work, featuring product setup, payment integration via PayPal, and custom branding and domain to create a polished, client-ready online shop.",
+    tags: ["Shopify", "E-commerce", "Payment Integration", "Branding", "UI/UX", "Product Management", "Responsive Design", "Client Collaboration"],
     
-    imageSrc:"/chat-app.png",
-    imageAlt: "Chat App Project",
-    liveSite: "https://instant-messenger.netlify.app/",
-    gitHubLink:"https://github.com/abigailridley/y2k-chat"
+    imageSrc:"/artshop.png",
+    imageAlt: "Shopify Art Shop",
+    liveSite: "https://www.artyemi.com/",
+
   },
 ] as const;
 
@@ -79,8 +79,7 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Tailwind",
+  "Tailwind CSS",
   "Framer Motion",
   "GitHub",
   "RESTful APIs",
