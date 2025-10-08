@@ -70,11 +70,7 @@ export default function Projects() {
                     href={project.liveSite}
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
-                    {project.title === "Personalised Stories"
-                      ? "View Presentation"
-                      : "View Live Site"}
-                  </a>
+                  ></a>
                 </div>
               </div>
             </SectionWindow>
