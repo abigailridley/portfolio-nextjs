@@ -68,6 +68,7 @@ export const projectsData = [
     imageSrc:"/artshop.png",
     imageAlt: "Shopify Art Shop",
     liveSite: "https://www.artyemi.com/",
+    gitHubLink:"https://www.artyemi.com/"
 
   },
 ] as const;
